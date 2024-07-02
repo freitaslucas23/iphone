@@ -1,0 +1,25 @@
+classDiagram
+    class IReprodutorMusical {
+        +tocar()
+        +pausar()
+        +selecionarMusica(musica: String)
+    }
+
+    class IAparelhoTelefonico {
+        +ligar(numero: String)
+        +atender()
+        +iniciarCorreioVoz()
+    }
+
+    class INavegadorInternet {
+        +exibirPagina(url: String)
+        +adicionarNovaAba()
+        +atualizarPagina()
+    }
+
+    class iPhone {
+    }
+
+    iPhone --|> IReprodutorMusical
+    iPhone --|> IAparelhoTelefonico
+    iPhone --|> INavegadorInternet
